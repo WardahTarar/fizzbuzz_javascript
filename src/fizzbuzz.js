@@ -1,8 +1,13 @@
 function Fizzbuzz() {}
 
 Fizzbuzz.prototype.prints = function(number) {
-  if (number % 15 === 0) return ("FizzBuzz")
-  if (number % 3 === 0) return ("Fizz")
-  if (number % 5 === 0) return ("Buzz")
-  return number
+  
+  for(number = 0; number <= 100; number++) {
+
+    if (number % 15 === 0) console.log("FizzBuzz");
+    if (number % 3 === 0) console.log("Fizz");
+    if (number % 5 === 0) console.log("Buzz");
+    else console.log(number);
+    number = number + 1
+  }
 }
