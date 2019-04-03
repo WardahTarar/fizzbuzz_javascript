@@ -8,6 +8,9 @@ Fizzbuzz.prototype.prints = function(number) {
     if (number % 3 === 0) console.log("Fizz");
     if (number % 5 === 0) console.log("Buzz");
     else console.log(number);
-    number = number + 1
   }
 }
+
+// testing it
+// var fizzbuzz = new Fizzbuzz
+// fizz.prints(100)
